@@ -16,6 +16,10 @@ gem 'bootsnap',   '1.4.5', require: false
 group :development, :test do
   gem 'sqlite3', '1.4.1'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'guard'
+  gem 'guard-zeus'
+  gem 'rack-livereload'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 
 group :development do
@@ -32,7 +36,6 @@ group :test do
   gem 'rails-controller-testing', '1.0.4'
   gem 'minitest',                 '5.11.3'
   gem 'minitest-reporters',       '1.3.8'
-  gem 'guard'
   gem 'guard-minitest',           '2.4.6'
 end
 
